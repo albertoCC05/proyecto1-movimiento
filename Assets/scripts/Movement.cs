@@ -8,13 +8,14 @@ public class Movement : MonoBehaviour
 
     [SerializeField] private float speed = 10f;
     private float horizontalInput;
-    [SerializeField] private float lateralspeed = 10f;
+    [SerializeField] private float lateralspeed = 20f;
     private float verticalInput;
 
     // variable camara
 
     [SerializeField] private GameObject camera;
     [SerializeField] private Vector3 offset;
+    
 
     //funciones
 
@@ -27,8 +28,13 @@ public class Movement : MonoBehaviour
 
         horizontalInput = Input.GetAxis("Horizontal");
 
-        transform.Translate(Vector3.right * lateralspeed * Time.deltaTime * horizontalInput);
-
         camera.transform.position = transform.position + offset;
+
+        if (verticalInput>0 || verticalInput<0)
+        {
+            transform.Rotate(Vector3.up * lateralspeed * Time.deltaTime * horizontalInput);
+        }
+
+        //transform.Translate(Vector3.right * lateralspeed * Time.deltaTime * horizontalInput);
     }
 }

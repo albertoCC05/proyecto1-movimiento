@@ -304,7 +304,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  lateralspeed: 10
+  lateralspeed: 20
   camera: {fileID: 534669902}
   offset: {x: 0, y: 5, z: -10}
 --- !u!54 &40038994
