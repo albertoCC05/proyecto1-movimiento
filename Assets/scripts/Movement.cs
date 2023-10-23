@@ -23,7 +23,7 @@ public class Movement : MonoBehaviour
     {
         verticalInput = Input.GetAxis("Vertical");
         
-        transform.Translate(translation: new Vector3(0, 0, 1)* speed * Time.deltaTime * verticalInput);
+        transform.Translate(translation: new Vector3(0, 0, 1) * speed * Time.deltaTime * verticalInput);
 
         horizontalInput = Input.GetAxis("Horizontal");
 
