@@ -8,6 +8,6 @@ public class MovmentController : MonoBehaviour
     {
         // if (Input.GetAxis("Acelerate"))
 
-        Debug.Log(Input.GetButton("Acelerate"));
+        Debug.Log(Input.GetAxis("Acelerate"));
     }
 }
