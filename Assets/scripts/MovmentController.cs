@@ -20,8 +20,7 @@ public class MovmentController : MonoBehaviour
     {
         // if (Input.GetAxis("Acelerate"))
 
-        Debug.Log(Input.GetAxis("Acelerate"));
-        Debug.Log(Input.GetAxis("Frenar"));
+        
 
         verticalInput = Input.GetAxis("Acelerate");
         verticalNegativeInput = Input.GetAxis("Frenar");
